@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">Dev<span>Folio</span>.</a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="hero">
+      <div class="container">
+        <div class="hero-content hidden">
+          <h1>Hi, I'm <span class="highlight">Alex Doe</span></h1>
+          <p>Front-End Developer & UI Designer</p>
+          <a href="#portfolio" class="btn primary-btn">View My Work</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-img hidden">
+            <img
+              src="https://placehold.co/400x400/2c3e50/white?text=Me"
+              alt="Profile Picture"
+            />
+          </div>
+          <div class="about-text hidden">
+            <h3>Creative Problem Solver</h3>
+            <p>
+              I build accessible, pixel-perfect, and performant web experiences.
+              With a strong foundation in HTML, CSS, and JavaScript, I aim to
+              bridge the gap between design and engineering.
+            </p>
+
+            <div class="skills">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Design</button>
+          <button class="filter-btn" data-filter="app">App Dev</button>
+          <button class="filter-btn" data-filter="ui">UI/UX</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="project-card" data-category="web">
+            <img
+              src="https://placehold.co/600x400/3498db/white?text=Web+Project"
+              alt="Project 1"
+            />
+            <div class="overlay">
+              <h3>E-Commerce Site</h3>
+              <p>Web Design</p>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="app">
+            <img
+              src="https://placehold.co/600x400/e74c3c/white?text=App+Project"
+              alt="Project 2"
+            />
+            <div class="overlay">
+              <h3>Task Manager</h3>
+              <p>App Dev</p>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="ui">
+            <img
+              src="https://placehold.co/600x400/9b59b6/white?text=UI+Design"
+              alt="Project 3"
+            />
+            <div class="overlay">
+              <h3>Dashboard UI</h3>
+              <p>UI/UX</p>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="web">
+            <img
+              src="https://placehold.co/600x400/2ecc71/white?text=Landing+Page"
+              alt="Project 4"
+            />
+            <div class="overlay">
+              <h3>Agency Landing</h3>
+              <p>Web Design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-wrapper">
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your Name" />
+              <small class="error-msg"></small>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Your Email" />
+              <small class="error-msg"></small>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="How can I help?"
+              ></textarea>
+              <small class="error-msg"></small>
+            </div>
+            <button type="submit" class="btn primary-btn">Send Message</button>
+            <p id="successMessage" class="success-msg"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Alex Doe. Built with HTML, CSS & JS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
